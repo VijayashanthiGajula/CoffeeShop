@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CoffeeShop.ColdDrinks"
+             Title="ColdDrinks">
+   
+    <ContentPage.Resources>
+        <Style TargetType="Label">
+            <Setter Property="HorizontalTextAlignment"
+                    Value="Start" />
+            <Setter Property="FontSize" Value="Small" />
+            <Setter Property="FontAttributes" Value="Bold" />
+            <Setter Property="TextColor" Value="#691025" />
+
+        </Style>
+    </ContentPage.Resources>
+    <ScrollView>
+        <VerticalStackLayout>
+            <Image
+                Source="coldcoffees.jpg"
+                SemanticProperties.Description="Hot drinks logo"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto " />
+                    <RowDefinition Height="Auto " />
+
+                    <RowDefinition Height="Auto " />
+                    <RowDefinition Height="Auto " />
+                    <RowDefinition Height="Auto " />
+                    <RowDefinition Height="Auto " />
+
+
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Nitro Cold Brew" Grid.Column="0" Grid.Row="0"    Margin="20,10,0,0"/>
+                <Label Text=" $3.75  " Grid.Column="1" Grid.Row="0"   Padding="20" HorizontalOptions="End" />
+
+                <Label Text="Iced Latte" Grid.Column="0" Grid.Row="1"   Margin="20,10,0,0"/>
+                <Label Text=" $4.25  " Grid.Column="1" Grid.Row="1"  Padding="20" HorizontalOptions="End" />
+
+                <Label Text="Frappuccino"   Grid.Column="0" Grid.Row="2"   Margin="20,10,0,0"/>
+                <Label Text=" $4.50  " Grid.Column="1"  Grid.Row="2"  Padding="20" HorizontalOptions="End" />
+
+                <Label Text="Iced Coffee"   Grid.Column="0" Grid.Row="3"   Margin="20,10,0,0"/>
+                <Label Text=" $3.25  " Grid.Column="1" Grid.Row="3"  Padding="20" HorizontalOptions="End" />
+
+                <Label Text=" Creamy Iced Coffee"  Grid.Column="0" Grid.Row="4"    Margin="20,10,0,0"/>
+                <Label Text=" $4.25  " Grid.Column="1" Grid.Row="4"  Padding="20" HorizontalOptions="End" />
+
+                <Label Text="Let your Barista Know your preffered brew method"  TextColor="OrangeRed" Grid.Column="0" Grid.ColumnSpan="2"
+                       Grid.Row="5"    Margin="20,10,0,0"/>
+
+
+            </Grid>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CoffeeShop.QuickBites"
+             Title="QuickBites">
+   
+   
+    <ScrollView>
+        <VerticalStackLayout>
+
+
+            <TableView>
+                <TableRoot>
+                    <TableSection>
+                        <ImageCell ImageSource="muffin.jpg" Text="Berry Muffin" Detail="$3.25" DetailColor="Maroon" />
+
+                         <ImageCell ImageSource="appleturnover.jpg" Text="Apple Turn Over" Detail="$3.25" DetailColor="Maroon" />
+
+                        <ImageCell ImageSource="chickenpopcorn.jpg" Text="Chicken popcorn" Detail="$3.25" DetailColor="Maroon" />
+
+                        <ImageCell ImageSource="eggbenedict" Text="Eggs Benedict" Detail="$3.25" DetailColor="Maroon" />
+
+                        <ImageCell ImageSource="bagel.jpg" Text="Bagel" Detail="$1.25" DetailColor="Maroon" />
+
+                         <ImageCell ImageSource="cheesebites.jpg" Text="Cheese Bites" Detail="$3.25" DetailColor="Maroon" />
+
+
+                    </TableSection>
+
+
+            
+                      
+
+                    </TableRoot>
+                </TableView>
+            
+
+                       
+                 
+            
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CoffeeShop.Menu"
+             Title="Menu">
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Start">
+
+      
+            <Image
+                Source="logo.jpg"
+                SemanticProperties.Description="cafe logo"
+                HeightRequest="200"  
+                HorizontalOptions="Center" />
+            <Button
+                    Text="Espresso "                 
+                    Clicked="OnButton_Clicked"
+                HorizontalOptions="Start"/>
+            <Button
+                    Text="Hot Drinks "
+                  
+                    Clicked="OnHot_Clicked" 
+                HorizontalOptions="Start"
+                />
+            <Button
+                    Text="Cold Drinks "
+                   
+                    Clicked="OnCold_Clicked" 
+                HorizontalOptions="Start"
+                />
+            <Button
+                    Text="Quick Bites "
+                 
+                    Clicked="OnQuick_Clicked" 
+                HorizontalOptions="Start"
+                />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+    
+    
+</ContentPage>

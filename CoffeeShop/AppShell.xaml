@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="CoffeeShop.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:CoffeeShop"
+    Shell.FlyoutBehavior="Disabled  "    >
+
+     
+    <!--<TabBar  >
+      
+        --><!--<ShellContent Title="Menu"
+                     Icon="appicon.svg"
+                     ContentTemplate="{DataTemplate :Menu}" />
+        <ShellContent Title="About"
+                     Icon="appicon.svg"
+                     ContentTemplate="{DataTemplate :About}" />
+        <ShellContent Title="Map"
+                     Icon="appiconfg.svg"
+                     ContentTemplate="{DataTemplate : Map}" />--><!--
+    </TabBar>-->
+
+</Shell>

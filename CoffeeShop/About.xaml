@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+    
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CoffeeShop.About"
+             Title="About">
+    <ScrollView>
+    <VerticalStackLayout>
+        <Grid
+          ColumnDefinitions=".35*,.35*,.30*" >
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition/>
+
+            </Grid.RowDefinitions>
+
+
+            <Image  Grid.ColumnSpan="3"  Grid.Row="0"               
+                Source="cafe.jpg"
+                HeightRequest="200"
+                SemanticProperties.Description="cafe logo"   />
+
+            <Image      Grid.ColumnSpan="3"  Grid.Row="1"
+                Source="title.jpg" 
+                  HeightRequest="150"
+                SemanticProperties.Description="cafe logo" 
+                HorizontalOptions="Start" />
+            <TableView Grid.ColumnSpan="3"  Grid.Row="2"    >
+                <TableRoot   >
+                    <TableSection >
+                        <TextCell Text=" 4A Kent Street, "  TextColor="#4a1f17"  />
+                        <TextCell Text="Newmarket "  TextColor="#4a1f17" />
+                        <TextCell Text=" Auckland,1023"  TextColor="#4a1f17" />
+                        <TextCell Text=" +64 9 444 55555" TextColor="#4a1f17" />
+                    </TableSection>
+                </TableRoot>
+            </TableView>
+
+
+                <ImageButton     Grid.Row="3"  Grid.Column="0"
+                
+                Source="facebooklogo.png"
+                Clicked="facebooklogoOnClick"
+                HorizontalOptions="Start"
+                
+                         ></ImageButton>
+                <ImageButton  Grid.Row="3"  Grid.Column="1"
+                Source="instagramlogo.png" 
+           Clicked="instagramlogoOnClick"
+                    HorizontalOptions="Start"    ></ImageButton>
+
+
+            </Grid>
+          
+       
+        </VerticalStackLayout>
+
+    </ScrollView>
+
+</ContentPage>
